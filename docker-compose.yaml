@@ -17,7 +17,6 @@ services:
       - 88:88/tcp
       - 389:389/tcp
       - 443:443/tcp
-      - 123:123/udp
       - 464:464/tcp
       - 636:636/tcp
       - 464:464/udp
@@ -25,4 +24,3 @@ services:
       - $PWD/ipa-data:/data:Z
       - /sys/fs/cgroup:/sys/fs/cgroup:ro
     restart: always
-    network_mode: host
